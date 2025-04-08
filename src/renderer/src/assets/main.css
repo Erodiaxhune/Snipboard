@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+@import './base.css';
+
+html,
+body {
+  width: 100%;
+  min-width: 100dvw;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #23212A;
+  /* background-image: url('./wavy-lines.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  user-select: none; */
+}
+
+#snips {
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0.2rem;
+  scrollbar-width: 1px;
+  scrollbar-color: transparent transparent;
+}
+
+#snips::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+#snips::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#snips::-webkit-scrollbar-thumb {
+  background: transparent;
+}
